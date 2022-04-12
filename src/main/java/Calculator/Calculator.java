@@ -1,8 +1,15 @@
 package Calculator;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
+import java.util.InputMismatchException;
 import java.util.Scanner;
 import java.lang.*;
 
-class Calculator {
+public class Calculator {
+    private static final Logger logger = LogManager.getLogger(Calculator.class);
+    public Calculator() {}
 	public static void main(String[] args) {
 		int choice;
 		Scanner sc = new Scanner(System.in);
@@ -12,22 +19,39 @@ class Calculator {
 			if(choice == 7) {
 				System.out.println("Closing calculator...");
 			}
-			
+
 			switch(choice) {
 			    case 1:
-				    squareRoot();
+                    double inputNum1;
+                    System.out.print("Enter number: ");
+                    inputNum1 = sc.nextDouble();
+				    double result = squareRoot(inputNum1);
+                    System.out.println("Result: "+result);
 				break;
-				
+
 			    case 2:
-				    factorial();
+                    int inputNum2;
+                    System.out.print("Enter Number: ");
+                    inputNum2 = sc.nextInt();
+                    System.out.println("Result: "+factorial(inputNum2));
 				    break;
 			    case 3:
-				    naturalLog();
+                    double inputNum3;
+                    System.out.print("Enter number: ");
+                    inputNum3 = sc.nextDouble();
+                    System.out.println("Result: "+naturalLog(inputNum3));
 				    break;
 			    case 4:
-				    powerFunction();
+                    double baseNumber, powerNumber;
+                    System.out.print("Enter base number: ");
+                    baseNumber = sc.nextInt();
+
+                    System.out.print("Enter power: ");
+                    powerNumber = sc.nextInt();
+				    double retVal = powerFunction(baseNumber, powerNumber);
+                    System.out.println("Result: "+retVal);
 				    break;
-	
+
 			}
 		}while(choice!=9);                                                                                                                                                                                                                                                                                                                                                                                                                                                             
 
@@ -42,48 +66,37 @@ class Calculator {
 	    System.out.print("Enter your choice: ");
     }
 
-    static void squareRoot() {
-        double inputNum;
-        Scanner sc = new Scanner(System.in);
-		System.out.print("Enter number: ");
-		inputNum = sc.nextDouble();
-		System.out.println("Result: "+Math.sqrt(inputNum));
+    public static double squareRoot(double inputNum) {
+        logger.info("Finding square root of "+inputNum+"\tResult: "+ Math.sqrt(inputNum));
+        return Math.sqrt(inputNum);
     }
- 
-    static void factorial() {
-        int inputNum;
-        System.out.print("Enter Number: ");
-        Scanner sc = new Scanner(System.in);
-        inputNum = sc.nextInt();
-      
-        int result = 1;
+
+    public static double factorial(int inputNum) {
+        if(inputNum < 0) {
+            logger.info("Can't calculate factorial of negative number! "+inputNum);
+            return Double.NaN;
+        }
+        double result = 1;
         for(int i=1; i<=inputNum; i++) {
             result = result*i;
         }
-    
-        System.out.println("Result: "+result);
+        logger.info("Calculating factorial value of "+inputNum+"\tResult: "+result);
+        return result;
     }
-  
-    static void naturalLog() {
-        double inputNum;
-        System.out.print("Enter number: ");
-        Scanner sc = new Scanner(System.in);
-        inputNum = sc.nextDouble();
-    
-        double result = Math.log(inputNum);
-        System.out.println("Result: "+result);
+
+    public static double naturalLog(double inputNum3) {
+        if(inputNum3 == 0) {
+            logger.info("Natural log of 0 is undefined!");
+            return Double.NaN;
+        }
+        double result = Math.log(inputNum3);
+        logger.info("Calculating natural log of " +inputNum3 + "\tResult: " + result);
+        return result;
     }
-  
-    static void powerFunction() {
-        double baseNumber, powerNumber;
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Enter base number: ");
-        baseNumber = sc.nextInt();
-    
-        System.out.print("Enter power: ");
-        powerNumber = sc.nextInt();
-    
+
+    public static double powerFunction(double baseNumber, double powerNumber) {
         double result = Math.pow(baseNumber, powerNumber);
-        System.out.println("Result: "+result);
+        logger.info("Calculating " + powerNumber + "th power of " + baseNumber + "\tResult: "+result);
+        return result;
     }
 }
