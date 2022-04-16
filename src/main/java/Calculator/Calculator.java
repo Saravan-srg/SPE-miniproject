@@ -90,7 +90,7 @@ public class Calculator {
             return Double.NaN;
         }
         double result = Math.log(inputNum3);
-        logger.info("Calculating natural log of " +inputNum3 + "\tResult: " + result);
+        logger.info("Calculating natural logarithm of " +inputNum3 + "\tResult: " + result);
         return result;
     }
 
