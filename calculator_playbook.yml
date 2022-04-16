@@ -4,5 +4,5 @@
   tasks:
     - name: Pull calculator image
       docker_image: 
-        name: saravansrg/calculator:18
+        name: saravansrg/calculator
         source: pull
