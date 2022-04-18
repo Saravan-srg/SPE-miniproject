@@ -1,16 +1,16 @@
-2022-04-12 19:37:14.804 [Calculator.java] INFO  Calculator.Calculator - Calculating 2.0th power of 5.0	Result: 25.0
-2022-04-12 19:37:14.807 [Calculator.java] INFO  Calculator.Calculator - Calculating 2.0th power of -5.0	Result: 25.0
-2022-04-12 19:37:14.809 [Calculator.java] INFO  Calculator.Calculator - Calculating factorial value of 5	Result: 120.0
-2022-04-12 19:37:14.809 [Calculator.java] INFO  Calculator.Calculator - Can't calculate factorial of negative number! -10
-2022-04-12 19:37:14.810 [Calculator.java] INFO  Calculator.Calculator - Calculating natural log of 10.0	Result: 2.302585092994046
-2022-04-12 19:37:14.811 [Calculator.java] INFO  Calculator.Calculator - Calculating natural log of -10.0	Result: NaN
-2022-04-12 19:37:14.811 [Calculator.java] INFO  Calculator.Calculator - Can't calculate factorial of negative number! -3
-2022-04-12 19:37:14.811 [Calculator.java] INFO  Calculator.Calculator - Calculating factorial value of 8	Result: 40320.0
-2022-04-12 19:37:14.811 [Calculator.java] INFO  Calculator.Calculator - Calculating natural log of -5.0	Result: NaN
-2022-04-12 19:37:14.812 [Calculator.java] INFO  Calculator.Calculator - Calculating natural log of 8.0	Result: 2.0794415416798357
-2022-04-12 19:37:14.812 [Calculator.java] INFO  Calculator.Calculator - Finding square root of 100.0	Result: 10.0
-2022-04-12 19:37:14.812 [Calculator.java] INFO  Calculator.Calculator - Finding square root of -100.0	Result: NaN
-2022-04-12 19:37:14.812 [Calculator.java] INFO  Calculator.Calculator - Finding square root of 64.0	Result: 8.0
-2022-04-12 19:37:14.813 [Calculator.java] INFO  Calculator.Calculator - Finding square root of 10.0	Result: 3.1622776601683795
-2022-04-12 19:37:14.814 [Calculator.java] INFO  Calculator.Calculator - Calculating 10.0th power of 2.0	Result: 1024.0
-2022-04-12 19:37:14.814 [Calculator.java] INFO  Calculator.Calculator - Calculating -1.0th power of 2.0	Result: 0.5
+2022-04-18 16:47:52.223 [Calculator.java] INFO  Calculator.Calculator - Power-Result: 25.0
+2022-04-18 16:47:52.226 [Calculator.java] INFO  Calculator.Calculator - Power-Result: 25.0
+2022-04-18 16:47:52.227 [Calculator.java] INFO  Calculator.Calculator - Factorial-Result: 120.0
+2022-04-18 16:47:52.228 [Calculator.java] INFO  Calculator.Calculator - Factorial-Result: NaN
+2022-04-18 16:47:52.228 [Calculator.java] INFO  Calculator.Calculator - NaturalLog-Result: 2.302585092994046
+2022-04-18 16:47:52.228 [Calculator.java] INFO  Calculator.Calculator - NaturalLog-Result: NaN
+2022-04-18 16:47:52.228 [Calculator.java] INFO  Calculator.Calculator - Factorial-Result: NaN
+2022-04-18 16:47:52.229 [Calculator.java] INFO  Calculator.Calculator - Factorial-Result: 40320.0
+2022-04-18 16:47:52.229 [Calculator.java] INFO  Calculator.Calculator - NaturalLog-Result: NaN
+2022-04-18 16:47:52.229 [Calculator.java] INFO  Calculator.Calculator - NaturalLog-Result: 2.0794415416798357
+2022-04-18 16:47:52.229 [Calculator.java] INFO  Calculator.Calculator - SquareRoot-Result: 10.0
+2022-04-18 16:47:52.230 [Calculator.java] INFO  Calculator.Calculator - SquareRoot-Result: NaN
+2022-04-18 16:47:52.230 [Calculator.java] INFO  Calculator.Calculator - SquareRoot-Result: 8.0
+2022-04-18 16:47:52.230 [Calculator.java] INFO  Calculator.Calculator - SquareRoot-Result: 3.1622776601683795
+2022-04-18 16:47:52.230 [Calculator.java] INFO  Calculator.Calculator - Power-Result: 1024.0
+2022-04-18 16:47:52.230 [Calculator.java] INFO  Calculator.Calculator - Power-Result: 0.5
