@@ -67,36 +67,36 @@ public class Calculator {
     }
 
     public static double squareRoot(double inputNum) {
-        logger.info("Finding square root of "+inputNum+"\tResult: "+ Math.sqrt(inputNum));
+        logger.info("SquareRoot-Result: "+ Math.sqrt(inputNum));
         return Math.sqrt(inputNum);
     }
 
     public static double factorial(int inputNum) {
         if(inputNum < 0) {
-            logger.info("Can't calculate factorial of negative number! "+inputNum);
+            logger.info("Factorial-Result: "+Double.NaN);
             return Double.NaN;
         }
         double result = 1;
         for(int i=1; i<=inputNum; i++) {
             result = result*i;
         }
-        logger.info("Calculating factorial value of "+inputNum+"\tResult: "+result);
+        logger.info("Factorial-Result: "+result);
         return result;
     }
 
     public static double naturalLog(double inputNum3) {
         if(inputNum3 == 0) {
-            logger.info("Natural log of 0 is undefined!");
+            logger.info("NaturalLog-Result: "+Double.NaN);
             return Double.NaN;
         }
         double result = Math.log(inputNum3);
-        logger.info("Calculating the natural logarithm of " +inputNum3 + "\tResult: " + result);
+        logger.info("NaturalLog-Result: "+result);
         return result;
     }
 
     public static double powerFunction(double baseNumber, double powerNumber) {
         double result = Math.pow(baseNumber, powerNumber);
-        logger.info("Calculating " + powerNumber + "th power of " + baseNumber + "\tResult: "+result);
+        logger.info("Power-Result: "+result);
         return result;
     }
 }
