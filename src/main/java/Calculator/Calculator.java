@@ -60,8 +60,8 @@ public class Calculator {
 	    System.out.println("\n*******CALCULATOR*******\n");
 	    System.out.println("Press 1 to find square root of a number");
 	    System.out.println("Press 2 to find factorial of a number");
-	    System.out.println("Press 3 to find the natural logarithm(base e) of a number");
-        System.out.println("Press 4 to find the power of a number raised to another number");
+	    System.out.println("Press 3 to find natural logarithm(base e) of a number");
+        System.out.println("Press 4 to find power of a number raised to another number");
 	    System.out.println("Press 9 to exit");
 	    System.out.print("Enter your choice: ");
     }
